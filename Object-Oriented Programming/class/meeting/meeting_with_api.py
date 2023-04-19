@@ -289,7 +289,7 @@ meet_system.add_user(User("bob"))
 meet_system.add_user(User("alice"))
 
 # test for use case find_room_available
-#test_find_room_available()
+# test_find_room_available()
 
 # test for use case room booking and create meeting
 #test_room_booking()
@@ -323,8 +323,6 @@ async def root() -> dict:
     return {"Ping": "Pong"}
 
 # GET -- > Read Todo
-
-
 @app.post("/get_available_room")
 async def get_available_room(data: dict) -> dict:
     st_d = data["start_date"]
