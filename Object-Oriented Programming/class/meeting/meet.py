@@ -9,7 +9,7 @@ class MeetingSchceduler:
         self.__meeting_room_list.append(room)
     
     def add_user(self, user):
-        self.__user_list.append(user)
+        self.__user_list.append(user)   
 
     def get_available_room(self,st_d, st_t, end_d, end_t, capacity):
         date1 = datetime.strptime(st_d + " " + st_t, '%d-%m-%Y %H:%M')
@@ -43,11 +43,14 @@ class MeetingRoom:
 
     def is_available(self):
         return self.__is_available
-    
+# ===============================================    
     @property
     def capacity(self):
         return self.__capacity
-    
+    @capacity.setter
+    def capacity(self, set):
+        self.__capacity = set
+# ===============================================
     def add_interval(self, interval):
         self.__interval_list.append(interval)
     
@@ -90,3 +93,8 @@ meet.add_user(john)
 a_room =  meet.get_available_room("26-03-2023", "09:00", "26-03-2023", "16:00", 30)
 for i in a_room:
     print(i)
+
+meeting = MeetingRoom
+meeting.capacity
+meeting.capacity(100)
+

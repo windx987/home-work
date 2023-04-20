@@ -1,7 +1,8 @@
 class ShoppingCart:
     def __init__(self):
         self.__item_list = []
-
+        
+    @property
     def add_to_cart(self,item):
         self.__item_list.append(item)
 
