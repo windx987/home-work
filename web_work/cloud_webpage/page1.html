@@ -2,48 +2,56 @@
 <head>
 	<title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<header>
-    <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>
-        <a href="#"><i class="fa fa-fw fa-search"></i></a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-fw fa-user"></i></a>
-      </div>
-</header>
+
 <body>
-    <div class="container">
-		<h1>Recommendation</h1>
-        <div class="box-container">
-            <div class="image-box"><td>style set 1</td>
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-            </div>
-            <div class="image-box"><td>style set 2</td>
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-            </div>
-            <div class="image-box"><td>style set 3</td>
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-                <img src="image5.jpg">
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+            <a href="#"><i class='fa fa-cog'></i></a>
+            <a href="#"><i class="fa fa-cloud-upload"></i></a>
+            <a href="#"><i class="fa fa-server"></i></a>
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>
             </div>
         </div>
-		<h2>My Collections <button class="btn" onclick="create_button()">+ Create new</button></h2>
-        <div class="box-container">
-            <div class="image-box"><td>style Date</td>
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-            </div>
-            <div class="image-box"><td>style Date</td>
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-                <img src="image5.jpg">
-            </div>
-        </div>
+    </header>
+	<div class="container">
+		<div class="row">
+			<h1>Recommendation</h1>
+		</div>
+		<div class="row">
+			<div class="content-box">
+                <label for="label">Style 1</label>
+                <div class="image-row">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+			</div>
+			<div class="content-box">
+                <label for="label">Style 2</label>
+				<div class="image-row">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+			</div>
+		</div>
+		<div class="row">
+			<h2>My Collections</h2>
+			<button class="create-button">+ Create New</button>
+		</div>
+		<div class="row">
+			<div class="content-box">
+                <label for="label">Date</label>
+				<img src="image1.jpg" alt="Image 2">
+				<img src="image1.jpg" alt="Image 2">
+                <img src="image1.jpg" alt="Image 2">
+			</div>
+		</div>
 	</div>
 </body>

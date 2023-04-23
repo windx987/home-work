@@ -1,29 +1,43 @@
+body {
+	background-color:#F0EFE9;
+	font-family: 'Inter';
+}
 
 /* Style the navigation bar */
 .navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
+	background-color: #ffffff;
+	overflow: hidden;
 }
 
 /* Navbar links */
 .navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 15px;
 }
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: #000;
+	background-color: #FCEFB4; /* Change this to your desired background color */
+	border-radius: 100%;
+	padding: 14px; /* Change this to your desired padding */
 }
 
 /* Current/active navbar link */
 .active {
-  background-color: #04AA6D;
+	background-color: #FCEFB4; /* Change this to your desired background color */
+	border-radius: 100%;
+	padding: 14px; /* Change this to your desired padding */
+}
+
+label {
+	float: right;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-size: 15px;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
@@ -34,46 +48,115 @@
   }
 }
 
-h1 {
-	font-size: 24px;
-	margin-top: 40px;
+h1, h2 {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 20px;
+
+	padding: 20px;
+	line-height: 19px;
+	text-decoration: underline solid #FCEFB4 20%;  
 }
 
-h2 {
-	font-size: 24px;
-	margin-top: 40px;
+.navbar_container{
+	max-height: auto;
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.box-container {
-  display: flex;
+.container{
+	max-height: auto;
+	max-width: 70%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-td {
-  color: #000000;
-	width:  50%;
-	border: none;
-	border-radius: 40px;
-	padding: 8px;
-	cursor: pointer;
-}
-
-.image-box {
-	background-color: #afafaf;
-	background-size: cover;
-	background-position: center;
-	height: 90px;
-	width:  40%;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
 	margin-bottom: 20px;
-  	border-radius: 10px;
+	font-size: 17px;
 }
 
-.btn {
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	font-size: 16px;
-	border-radius: 5px;
+.content-box {
+
+	padding: 10px;
+	
+	width: auto;
+	height: auto;
+
+	margin: 20px;
+
+	justify-content: center;
+	align-items: center;
+
+	background: #FFFFFF;
+	border-radius: 12px;
+}
+
+.content-box img {
+	
+	width: 80px;
+	height: 80px;
+
+	padding: 20px;
+
+	border-radius: 10px;
+	border: 1px solid #FFFFFF;
+
+	filter: drop-shadow(0px 4px 4px #D2D4FF);
+}
+
+.create-button {
+
+	justify-content: left;
+	align-items: left;
+
 	cursor: pointer;
-	margin-top: 20px;
+	margin-left: 70%;
+	
+	font-family: 'Inter';
+
+	width: 130px;
+	height: 33px;
+
+	border: none;
+	border-radius: 10px;
+
+	color: rgb(0, 0, 0);
+	background: #FCEFB4;
+}
+
+.create-button:hover {
+	background-color: #ffffff;
+}
+
+.label-row {
+	margin-top: 10px; /* add margin-top to create separation */
+
+	align-items: left;
+	justify-content: left;
+}
+
+.image-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px; /* add margin-top to create separation */
+}
+  
+.image-row img {
+	
+	width: 80px;
+	height: 80px;
+
+	padding: 20px;
+
+	border-radius: 10px;
+	border: 1px solid #FFFFFF;
+
+	filter: drop-shadow(0px 4px 4px #D2D4FF);
 }
