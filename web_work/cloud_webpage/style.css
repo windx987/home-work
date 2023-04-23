@@ -58,12 +58,13 @@ td {
 }
 
 .image-box {
-	background-color: #555;
+	background-color: #afafaf;
 	background-size: cover;
 	background-position: center;
-	height: 100px;
-	margin-bottom: 10px;
-  border-radius: 10px;
+	height: 90px;
+	width:  40%;
+	margin-bottom: 20px;
+  	border-radius: 10px;
 }
 
 .btn {
