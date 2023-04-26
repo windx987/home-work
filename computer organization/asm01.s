@@ -128,7 +128,7 @@ close_file:
     mov  r7, #6 @ close
     svc 0
     mov r0, r4 @ return file descriptor
-    bx lr
+    bx lr   
 
 search: @function 2
     mov r0,r4
