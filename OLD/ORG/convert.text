@@ -1,6 +1,0 @@
-gcc -S -o labtest.s labtest.c
-gcc labtest.c -o labtest
-
-@ใช้คำสั่ง gcc -S -o labtest.s labtest.c เพื้อสร้างไฟล์ .s จริงๆ ไม่ต้องทำก็ได้แต่ทำเพื่อความเนียน
-@ใช้คำสั่ง gcc labtest.c -o labtest เพื่อที่จะได้รัน ./labtest ได้
-
